@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <!-- Put your title here --!>
+  <link rel="stylesheet" href="needed.css" />
+
+
+  <!-- libraries: THREE.js, GLTFLoader.js-->
+  <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.147.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+
+  <video id="webcam" autoplay playsinline muted></video>
+  <div id="canvas-container"></div>
+
+  <div id="overlay">
+    <h2>ARmatrix</h2>
+    <p>This application uses the ARmatrix library and requires access to your camera and motion sensors to continue</p>
+    <button class="btn" id="start-btn">Grant</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
